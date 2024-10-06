@@ -15,7 +15,7 @@ import {
   where,
 } from "firebase/firestore";
 import { AppContext } from "../../context/AppContext.jsx";
-import { db } from "../../config/firebase.js";
+import { db, logout } from "../../config/firebase.js";
 import { toast } from "react-toastify";
 
 const LeftSideBar = () => {
@@ -202,7 +202,7 @@ const LeftSideBar = () => {
             <div className="sub-menu">
               <p onClick={() => navigate("/profile")}>Edit Profile</p>
               <hr />
-              <p>Logout</p>
+              <p onClick={() => logout()}>Logout</p>
             </div>
           </div>
         </div>

@@ -63,3 +63,23 @@ textarea {
   padding: 8px;
   font-size: 16px;
 }
+
+@media (max-width: 900px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .profile-pic {
+    max-width: 120px;
+  }
+
+  .profile form {
+    padding: 20px;
+  }
+
+  .profile input,
+  textarea {
+    min-width: 100%;
+  }
+}

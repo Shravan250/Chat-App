@@ -159,7 +159,12 @@ const ChatBox = () => {
                 className={msg.sId === userData.id ? "s-msg" : "r-msg"}
               >
                 {msg["image"] ? (
-                  <img src={msg.image} alt="" className="msg-img" />
+                  <img
+                    onClick={() => window.open(url)}
+                    src={msg.image}
+                    alt=""
+                    className="msg-img"
+                  />
                 ) : (
                   <p className="msg">{msg.text}</p>
                 )}
